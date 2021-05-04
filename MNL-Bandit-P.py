@@ -41,7 +41,7 @@ total_revenue_optimal = np.array([0 for i in range(T)])
 R = 0
 R_optimal = 0
 N = list(range(productcount)) # set of all product
-r = np.array([np.random.random() for _ in range(productcount)]) # revenue of products
+r = np.random.random(size = productcount) # revenue of products
 r_sorted = r.tolist()
 r_sorted.sort(reverse=True)
 N_sorted = np.argsort(r)
